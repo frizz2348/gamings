@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: white;
+$secondary-color: cyan;
+$black : black;
+$red : rgb(160, 116, 116);
+$burger: rgb(26, 78, 78);
+
+body {
+    background: $primary-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    &.open {
+        overflow: hidden;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7),);
+    }
+}
+
+.container {
+    height: 1200px;
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: rgb(28, 32, 34);
+    height: 120px;
+    width: 100%;
+    color: $primary-color;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    .head {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    h4 {
+        color: rgb(67, 216, 216);
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+} 
+
+nav {
+    position: fixed;
+    top: 1px;
+    right: 0;
+    width: 140px;
+    height:120vw;
+    background-color: rgb(246, 243, 243);
+    visibility: hidden;
+    &.open {
+        visibility: visible;
+    }
+    li {
+        font-size: 13px;
+        font-weight: 500;
+        list-style-type: none;
+        border-bottom: 1px solid rgb(31, 219, 194);
+        padding: 11px;
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+    .menu {
+        background-color: black;
+        color: white;
+        padding: 9px;
+    }
+    .english {
+        padding: 3px;
+        margin-top: 180px;
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.head2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 13vw;
+    height: 100%;
+    background-color: rgb(17, 14, 14);
+    .img {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(51, 108, 116);
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin:5px 32% 0 32%;
+        }
+    }
+
+    .menu-nav {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(41, 236, 236);
+        position: relative;
+    }
+    .menu-btn {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        z-index: 1;
+       // margin:28px 20px 0 0;
+        &.open {
+            transform: rotate(720deg);
+            position: absolute;
+            top: -60px;
+            right: 140px;
+            background-color: transparent;
+        }
+        &__burger {
+            position: absolute;
+            top: 13px;
+            right: 0;
+            width: 28px;
+            height: 3px;
+            background-color: $burger;
+            cursor: pointer;
+            transition: ease-in 500ms;
+            &.open {
+                transform: rotate(360deg);
+                background-color: transparent;
+                &:before {
+                    transform: rotate(45deg) translate(5px, 8px);
+                    transition: ease-in 500ms;
+                    background-color: $primary-color;
+                }
+                &:after {
+                    transform: rotate(-45deg) translate(3px, -7px);
+                    transition: ease-in 500ms;
+                    background-color: $primary-color;
+                }
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                top: -8px;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $burger;
+                transition: ease-in 500ms;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: 8px;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $burger ;
+                transition: ease-in 500ms;
+                &.open {
+                    transform: rotate(45deg) translate(5px, 8px);
+                    transition: ease-in 500ms;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    height: 150px;
+    width: 100vw;
+    background: #0885959f;
+    line-height: 14px;
+    p {
+        font-size: 12px;
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        &:hover {
+            background-color: rgba(51, 108, 116, 0.548);
+        }
+    }
+}
