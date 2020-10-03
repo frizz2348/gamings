@@ -8,21 +8,20 @@ $secondary-color: cyan;
 $black : black;
 $red : rgb(160, 116, 116);
 $burger: rgb(26, 78, 78);
+$burger-color: red;
 
 body {
-    background: $primary-color;
+    background: $secondary-color;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     &.open {
-        position: absolute;
-        z-index: 1;
         overflow: hidden;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7),);
+        background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918),);
     }
 }
 
 .container {
-    height: 1200px;
-    //overflow-x: hidden;
+    background-color: $primary-color;
+    width: 100%;
 }
 
 
@@ -36,14 +35,14 @@ header {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 9fr 1fr;
-    color: $black;
+    color: $burger-color;
     .head {
         text-align: center;
         margin-top: 50px;
     }
 
     h4 {
-        color: rgb(195, 24, 18);
+        color:$black;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 11px;
@@ -56,7 +55,7 @@ nav {
     right: 0;
     width: 140px;
     height:120vw;
-    background-color: rgb(246, 243, 243);
+    background-color: $primary-color;
     visibility: hidden;
     &.open {
         visibility: visible;
@@ -65,7 +64,7 @@ nav {
         font-size: 13px;
         font-weight: 500;
         list-style-type: none;
-        border-bottom: 1px solid rgb(31, 219, 194);
+        border-bottom: 1px solid $secondary-color;
         padding: 11px;
         &:hover {
             background-color: darkcyan;
@@ -79,8 +78,8 @@ nav {
         }
     }
     .menu {
-        background-color: black;
-        color: white;
+        background-color: $black;
+        color: $primary-color;
         padding: 9px;
     }
     .english {
@@ -91,7 +90,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: black;
+        color: $black;
     }
 }
 
@@ -116,7 +115,7 @@ nav {
     .menu-nav {
         height: 100%;
         width: 100%;
-        background-color: rgb(41, 236, 236);
+        background-color: $secondary-color;
         position: relative;
     }
     .menu-btn {
@@ -127,9 +126,7 @@ nav {
         top: 16px;
         right: 20px;
         z-index: 1;
-       // margin:28px 20px 0 0;
         &.open {
-            transform: rotate(720deg);
             position: absolute;
             top: -60px;
             right: 140px;
@@ -145,17 +142,17 @@ nav {
             cursor: pointer;
             transition: ease-in 500ms;
             &.open {
-                transform: rotate(360deg);
+                transform: rotate(180deg);
                 background-color: transparent;
                 &:before {
                     transform: rotate(45deg) translate(5px, 8px);
                     transition: ease-in 500ms;
-                    background-color: $primary-color;
+                    background-color: $burger-color;
                 }
                 &:after {
                     transform: rotate(-45deg) translate(3px, -7px);
                     transition: ease-in 500ms;
-                    background-color: $primary-color;
+                    background-color: $burger-color;
                 }
             }
             &:before {
@@ -188,10 +185,8 @@ nav {
 
 .contact {
     height: 185px;
-    width: 100vw;
-    background: url('images/img3.jpeg') center center no-repeat;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    background: rgb(4, 31, 32);
     ul {
         padding-top: 30px;
     }
@@ -214,10 +209,11 @@ nav {
 .intro {
     height: 170px;
     width: 100%;
-    background: url('images/img5.jpeg');
+    background: url('images/img8.jpeg');
     background-size: cover;
     background-position: center;
-    color: $black;
+    color: $primary-color;
+
     h3 {
         font-size: 20px;
         padding: 30px 0 20px 25px;
@@ -225,6 +221,7 @@ nav {
     p {
         font-size: 13px;
         padding:0 14px 0 25px;
+        font-weight: 600;
     }
 }
 
@@ -284,7 +281,7 @@ nav {
         background-color: rgb(66, 231, 231);
         a {
             text-decoration: none;
-            color: black;
+            color: $black;
         }
     }
     .hide {
@@ -306,7 +303,7 @@ nav {
     }
     p {
         font-size: 14px;
-        color: rgb(255, 255, 255);
+        color: $primary-color;
         padding:0 14px 0 25px;
         font-weight: 600;
         margin-bottom: 50px;
@@ -321,14 +318,15 @@ nav {
         grid-gap: .7em;
     }
     &-cards {
+        padding-left: 30px;
         height: 50px;
         border-bottom: 1px solid rgba(175, 165, 165, 0.349);
     }
 
     a {
-        padding: 30px;
         text-decoration: none;
         color: $primary-color;
+        font-weight: 600;
     }
 }
 

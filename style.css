@@ -3,16 +3,15 @@
   padding: 0; }
 
 body {
-  background: white;
+  background: cyan;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
-    position: absolute;
-    z-index: 1;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+    background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918)); }
 
 .container {
-  height: 1200px; }
+  background-color: white;
+  width: 100%; }
 
 header {
   background: url("images/img2.jpeg") no-repeat;
@@ -24,12 +23,12 @@ header {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 9fr 1fr;
-  color: black; }
+  color: red; }
   header .head {
     text-align: center;
     margin-top: 50px; }
   header h4 {
-    color: #c31812;
+    color: black;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 11px; }
@@ -40,7 +39,7 @@ nav {
   right: 0;
   width: 140px;
   height: 120vw;
-  background-color: #f6f3f3;
+  background-color: white;
   visibility: hidden; }
   nav.open {
     visibility: visible; }
@@ -48,7 +47,7 @@ nav {
     font-size: 13px;
     font-weight: 500;
     list-style-type: none;
-    border-bottom: 1px solid #1fdbc2;
+    border-bottom: 1px solid cyan;
     padding: 11px; }
     nav li:hover {
       background-color: darkcyan;
@@ -87,7 +86,7 @@ nav {
   .head2 .menu-nav {
     height: 100%;
     width: 100%;
-    background-color: #29ecec;
+    background-color: cyan;
     position: relative; }
   .head2 .menu-btn {
     height: 30px;
@@ -98,7 +97,6 @@ nav {
     right: 20px;
     z-index: 1; }
     .head2 .menu-btn.open {
-      transform: rotate(720deg);
       position: absolute;
       top: -60px;
       right: 140px;
@@ -113,16 +111,16 @@ nav {
       cursor: pointer;
       transition: ease-in 500ms; }
       .head2 .menu-btn__burger.open {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
         background-color: transparent; }
         .head2 .menu-btn__burger.open:before {
           transform: rotate(45deg) translate(5px, 8px);
           transition: ease-in 500ms;
-          background-color: white; }
+          background-color: red; }
         .head2 .menu-btn__burger.open:after {
           transform: rotate(-45deg) translate(3px, -7px);
           transition: ease-in 500ms;
-          background-color: white; }
+          background-color: red; }
       .head2 .menu-btn__burger:before {
         position: absolute;
         content: '';
@@ -147,10 +145,8 @@ nav {
 
 .contact {
   height: 185px;
-  width: 100vw;
-  background: url("images/img3.jpeg") center center no-repeat;
-  background-size: cover;
-  background-position: center; }
+  width: 100%;
+  background: #041f20; }
   .contact ul {
     padding-top: 30px; }
   .contact li {
@@ -168,16 +164,17 @@ nav {
 .intro {
   height: 170px;
   width: 100%;
-  background: url("images/img5.jpeg");
+  background: url("images/img8.jpeg");
   background-size: cover;
   background-position: center;
-  color: black; }
+  color: white; }
   .intro h3 {
     font-size: 20px;
     padding: 30px 0 20px 25px; }
   .intro p {
     font-size: 13px;
-    padding: 0 14px 0 25px; }
+    padding: 0 14px 0 25px;
+    font-weight: 600; }
 
 .products, .products__2 {
   height: 130px;
@@ -253,11 +250,12 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-gap: .7em; }
   .products__two-cards {
+    padding-left: 30px;
     height: 50px;
     border-bottom: 1px solid rgba(175, 165, 165, 0.349); }
   .products__two a {
-    padding: 30px;
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
