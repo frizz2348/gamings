@@ -13,7 +13,9 @@ body {
   height: 1200px; }
 
 header {
-  background-color: #1c2022;
+  background: url("images/img3.jpeg") center center no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 120px;
   width: 100%;
   color: white;
@@ -143,7 +145,9 @@ nav {
 .contact {
   height: 185px;
   width: 100vw;
-  background: #24585f9f; }
+  background: url("images/img4.jpeg") center center no-repeat;
+  background-size: cover;
+  background-position: center; }
   .contact ul {
     padding-top: 30px; }
   .contact li {
@@ -161,8 +165,10 @@ nav {
 .intro {
   height: 170px;
   width: 100%;
-  background-color: black;
-  color: white; }
+  background: url("images/img5.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: black; }
   .intro h3 {
     font-size: 20px;
     padding: 30px 0 20px 25px; }
@@ -220,7 +226,9 @@ nav {
     visibility: hidden; }
 
 .products__two {
-  background-color: black;
+  background: url("images/img8.jpeg") center center no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 620px;
   width: 100%;
   color: white; }
