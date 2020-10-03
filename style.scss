@@ -5,13 +5,15 @@
 
 $primary-color: white;
 $secondary-color: cyan;
-$black : black;
+$dark : black;
 $red : rgb(160, 116, 116);
 $burger: rgb(26, 78, 78);
 $burger-color: red;
+$grey: grey;
 
 body {
-    background: $secondary-color;
+    width: 100%;
+    background: $dark;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     &.open {
         overflow: hidden;
@@ -29,6 +31,7 @@ header {
     background: url('images/img2.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: $secondary-color;
     height: 120px;
     width: 100%;
     color: $primary-color;
@@ -42,7 +45,7 @@ header {
     }
 
     h4 {
-        color:$black;
+        color:$dark;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 11px;
@@ -78,7 +81,7 @@ nav {
         }
     }
     .menu {
-        background-color: $black;
+        background-color: $dark;
         color: $primary-color;
         padding: 9px;
     }
@@ -90,7 +93,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: $black;
+        color: $dark;
     }
 }
 
@@ -193,6 +196,10 @@ nav {
     li {
         text-align: center;
         line-height: 26px;
+        i {
+            font-size: 20px;
+            color: red;
+        }
         a {
             color: $primary-color;
             text-decoration: none;
@@ -281,7 +288,7 @@ nav {
         background-color: rgb(66, 231, 231);
         a {
             text-decoration: none;
-            color: $black;
+            color: $dark;
         }
     }
     .hide {
@@ -293,9 +300,14 @@ nav {
     background: url('images/img8.jpeg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    height: 620px;
+    height: 560px;
     width: 100%;
     color: $primary-color;
+    margin-bottom: 40px;
+    i {
+        font-size: 35px;
+        color: rgb(211, 230, 230);
+    }
     h2 {
         font-size: 26px;
         font-weight: 900;
@@ -320,7 +332,12 @@ nav {
     &-cards {
         padding-left: 30px;
         height: 50px;
-        border-bottom: 1px solid rgba(175, 165, 165, 0.349);
+        border-bottom: 1px solid $grey;
+        span i{
+            height: 180px;
+            width: 180px;
+            color: red;
+        }
     }
 
     a {
@@ -330,3 +347,23 @@ nav {
     }
 }
 
+section {
+
+    h2{
+        margin: 0 0 12px 30px;
+        font-weight: 800;
+    }
+    p {
+        font-size: 12px;
+        margin:0 0 50px 30px;
+        color: $grey;
+        font-weight: 700;
+    }
+    .brands {
+        i {
+            font-size: 60px;
+            color: rgb(20, 19, 19);
+            padding: 15px;
+        }
+    }
+}

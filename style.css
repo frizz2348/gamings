@@ -3,7 +3,8 @@
   padding: 0; }
 
 body {
-  background: cyan;
+  width: 100%;
+  background: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
     overflow: hidden;
@@ -17,6 +18,7 @@ header {
   background: url("images/img2.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: cyan;
   height: 120px;
   width: 100%;
   color: white;
@@ -152,6 +154,9 @@ nav {
   .contact li {
     text-align: center;
     line-height: 26px; }
+    .contact li i {
+      font-size: 20px;
+      color: red; }
     .contact li a {
       color: white;
       text-decoration: none;
@@ -229,9 +234,13 @@ nav {
   background: url("images/img8.jpeg") center center no-repeat;
   background-size: cover;
   background-position: center;
-  height: 620px;
+  height: 560px;
   width: 100%;
-  color: white; }
+  color: white;
+  margin-bottom: 40px; }
+  .products__two i {
+    font-size: 35px;
+    color: #d3e6e6; }
   .products__two h2 {
     font-size: 26px;
     font-weight: 900;
@@ -252,10 +261,27 @@ nav {
   .products__two-cards {
     padding-left: 30px;
     height: 50px;
-    border-bottom: 1px solid rgba(175, 165, 165, 0.349); }
+    border-bottom: 1px solid grey; }
+    .products__two-cards span i {
+      height: 180px;
+      width: 180px;
+      color: red; }
   .products__two a {
     text-decoration: none;
     color: white;
     font-weight: 600; }
+
+section h2 {
+  margin: 0 0 12px 30px;
+  font-weight: 800; }
+section p {
+  font-size: 12px;
+  margin: 0 0 50px 30px;
+  color: grey;
+  font-weight: 700; }
+section .brands i {
+  font-size: 60px;
+  color: #141313;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
