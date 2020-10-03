@@ -6,6 +6,8 @@ body {
   background: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
+    position: absolute;
+    z-index: 1;
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
 
@@ -13,7 +15,7 @@ body {
   height: 1200px; }
 
 header {
-  background: url("images/img3.jpeg") center center no-repeat;
+  background: url("images/img2.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 120px;
@@ -21,13 +23,14 @@ header {
   color: white;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 9fr 1fr; }
+  grid-template-columns: 9fr 1fr;
+  color: black; }
   header .head {
     text-align: center;
     margin-top: 50px; }
   header h4 {
-    color: #43d8d8;
-    font-weight: 400;
+    color: #c31812;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 11px; }
 
@@ -145,7 +148,7 @@ nav {
 .contact {
   height: 185px;
   width: 100vw;
-  background: url("images/img4.jpeg") center center no-repeat;
+  background: url("images/img3.jpeg") center center no-repeat;
   background-size: cover;
   background-position: center; }
   .contact ul {
