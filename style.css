@@ -320,6 +320,8 @@ section .brands-2 i {
 
 .gradient {
   background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img5.jpeg");
+  background-size: cover;
+  background-position: center;
   height: 700px; }
 
 .article3 {
@@ -336,5 +338,62 @@ section .brands-2 i {
     margin: 0 0 25px 0; }
   .article3 div {
     margin-left: 10px; }
+
+.register {
+  height: 800px;
+  background: linear-gradient(rgba(14, 216, 223, 0.712), rgba(7, 243, 231, 0.712), rgba(36, 245, 200, 0.712)), url("images/img9.jpeg");
+  background-size: cover;
+  background-position: center; }
+  .register .contact-us {
+    margin: 0 0 30px 60px;
+    padding: 80px 0 0 40px; }
+    .register .contact-us h1 {
+      color: grey;
+      font-size: 50px;
+      font-weight: 900; }
+    .register .contact-us ul {
+      padding-top: 30px; }
+    .register .contact-us li {
+      text-align: center;
+      line-height: 26px;
+      list-style-type: none; }
+      .register .contact-us li i {
+        font-size: 22px;
+        background-color: grey;
+        border-radius: 50%;
+        color: white;
+        margin-left: -30px; }
+      .register .contact-us li a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500; }
+  .register .form {
+    height: 420px;
+    width: 300px;
+    background-color: rgba(30, 228, 211, 0.698);
+    margin-left: 30px; }
+  .register label, .register textarea {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 0 5%;
+    padding-top: 10px; }
+    .register label span, .register textarea span {
+      color: grey; }
+  .register input, .register textarea {
+    width: 90%;
+    height: 30px;
+    border-radius: .8em;
+    margin: 0 0 0 5%; }
+  .register textarea {
+    height: 100px; }
+  .register button {
+    background-color: #8d2121;
+    color: white;
+    width: 40%;
+    border-radius: .8em;
+    height: 30px;
+    margin: 0 0 0 5%; }
 
 /*# sourceMappingURL=style.css.map */

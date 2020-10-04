@@ -416,6 +416,8 @@ section {
 
 .gradient {
     background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url('images/img5.jpeg');
+    background-size: cover;
+    background-position: center;
     height: 700px;
 }
 
@@ -440,5 +442,84 @@ section {
         margin-left: 10px;
     }
 }
+
+.register {
+    height: 800px;
+    background: linear-gradient(rgba(14, 216, 223, 0.712), rgba(7, 243, 231, 0.712), rgba(36, 245, 200, 0.712)), url('images/img9.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    .contact-us {
+        margin: 0 0 30px 60px;
+        padding: 80px 0 0 40px;
+        h1 {
+            color: $grey;
+            font-size: 50px;
+            font-weight: 900;
+            
+        }
+        ul {
+            padding-top: 30px;
+        }
+        li {
+            text-align: center;
+            line-height: 26px;
+            list-style-type: none;
+            
+            i {
+                font-size: 22px;
+                background-color: $grey;
+                border-radius: 50%;
+                color: $primary-color;
+                margin-left: -30px;
+            }
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .form {
+        height: 420px;
+        width: 300px;
+        background-color: rgba(30, 228, 211, 0.698);
+        margin-left: 30px;
+    }
+    label, textarea {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 0 0 5%;
+        padding-top: 10px;
+        span {
+            color: $grey;
+        }
+
+    }
+    input, textarea{
+        width: 90%;
+        height: 30px;
+        border-radius: .8em;
+        margin:0 0 0 5%;
+    }
+    textarea {
+        height: 100px ;
+    }
+
+    button {
+        background-color: rgb(141, 33, 33);
+        color: $primary-color;
+        width: 40%;
+        border-radius: .8em;
+        height: 30px;
+        margin:0 0 0 5%;
+    }
+}
+
+
+
 
 
