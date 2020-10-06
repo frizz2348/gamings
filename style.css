@@ -15,7 +15,7 @@ body {
   width: 100%; }
 
 header {
-  background: url("images/img2.jpeg") no-repeat;
+  background: linear-gradient(rgba(102, 32, 149, 0.7), rgba(218, 9, 9, 0.7), rgba(19, 14, 14, 0.7)), url("images/img2.jpeg");
   background-size: cover;
   background-position: center;
   background-color: cyan;
@@ -29,7 +29,7 @@ header {
     text-align: center;
     margin-top: 50px; }
     header .head h2 {
-      color: red;
+      color: white;
       font-weight: 1400; }
     header .head h4 {
       color: black;
@@ -148,9 +148,9 @@ nav {
           transition: ease-in 500ms; }
 
 .contact {
-  height: 185px;
+  height: 155px;
   width: 100%;
-  background: #041f20; }
+  background: rgba(255, 1, 200, 0.37); }
   .contact ul {
     padding-top: 30px; }
   .contact li {
@@ -160,7 +160,7 @@ nav {
       font-size: 20px;
       color: red; }
     .contact li a {
-      color: white;
+      color: black;
       text-decoration: none;
       font-size: 13px;
       font-weight: 500; }
@@ -171,7 +171,7 @@ nav {
 .intro {
   height: 170px;
   width: 100%;
-  background: url("images/img8.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/img8.jpeg");
   background-size: cover;
   background-position: center;
   color: white; }
@@ -181,7 +181,8 @@ nav {
   .intro p {
     font-size: 13px;
     padding: 0 14px 0 25px;
-    font-weight: 600; }
+    font-weight: 600;
+    color: white; }
 
 .products, .products__2 {
   height: 130px;
@@ -317,8 +318,11 @@ section .brands-2 i {
   background-size: cover;
   font-size: 16px;
   font-weight: 600;
-  height: 240px;
+  height: 300px;
+  align-content: center;
   color: white; }
+  .feedback p {
+    padding: 50px 20px 0; }
 
 .gradient {
   background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img5.jpeg");
@@ -401,5 +405,36 @@ section .brands-2 i {
     .register button:hover {
       background: red;
       transition: ease-in 200ms; }
+
+.section-last {
+  background: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.829)), url("images/img5.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 1px; }
+  .section-last h3 {
+    font-size: 16px;
+    color: white;
+    margin: 0 20px 15px 20px;
+    padding: 30px 0 5px 0;
+    border-bottom: 2px solid grey; }
+
+.solution li, .product li, .game-provider li, .about-us li, .legal li {
+  list-style-type: none; }
+  .solution li a, .product li a, .game-provider li a, .about-us li a, .legal li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 20px 15px 20px;
+    color: grey; }
+    .solution li a:hover, .product li a:hover, .game-provider li a:hover, .about-us li a:hover, .legal li a:hover {
+      color: #00d6d6; }
+
+footer {
+  background-color: #e213a4;
+  color: white;
+  text-align: center;
+  font-weight: 500; }
+  footer span {
+    font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ body {
 
 
 header {
-    background: url('images/img2.jpeg') no-repeat;
+    background: linear-gradient(rgba(102, 32, 149, 0.7), rgba(218, 9, 9, 0.7), rgba(19, 14, 14, 0.7)), url('images/img2.jpeg');
     background-size: cover;
     background-position: center;
     background-color: $secondary-color;
@@ -42,7 +42,7 @@ header {
         text-align: center;
         margin-top: 50px;
         h2 {
-            color: $burger-color;
+            color: $primary-color;
             font-weight: 1400;
         }
         h4 {
@@ -189,9 +189,9 @@ nav {
 }
 
 .contact {
-    height: 185px;
+    height: 155px;
     width: 100%;
-    background: rgb(4, 31, 32);
+    background: rgba(255, 1, 200, 0.37);
     ul {
         padding-top: 30px;
     }
@@ -203,7 +203,7 @@ nav {
             color: red;
         }
         a {
-            color: $primary-color;
+            color: $dark;
             text-decoration: none;
             font-size: 13px;
             font-weight: 500;
@@ -218,7 +218,7 @@ nav {
 .intro {
     height: 170px;
     width: 100%;
-    background: url('images/img8.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/img8.jpeg');
     background-size: cover;
     background-position: center;
     color: $primary-color;
@@ -231,6 +231,7 @@ nav {
         font-size: 13px;
         padding:0 14px 0 25px;
         font-weight: 600;
+        color: $primary-color;
     }
 }
 
@@ -412,8 +413,12 @@ section {
     background-size: cover;
     font-size: 16px;
     font-weight: 600;
-    height: 240px;
+    height: 300px;
+    align-content: center;
     color: $primary-color;
+    p {
+        padding: 50px 20px 0;
+    }
 }
 
 .gradient {
@@ -526,7 +531,43 @@ section {
     }
 }
 
+.section-last {
+    background: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.829)), url('images/img5.jpeg') ;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 1px;
+    h3 {
+        font-size: 16px;
+        color: $primary-color;
+        margin: 0 20px 15px 20px;
+        padding: 30px 0 5px 0;
+        border-bottom: 2px solid $grey;
+    }
+}
+
+.solution, .product, .game-provider, .about-us, .legal {
+    li {
+        list-style-type: none;
+        a {
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 20px 15px 20px;
+        color: $grey;
+            &:hover {
+            color: darken($secondary-color, 8);
+            }
+        }
+    }   
+}
 
 
-
-
+footer {
+    background-color: rgb(226, 19, 164);
+    color: $primary-color;
+    text-align: center;
+    font-weight: 500;
+    span {
+        font-weight: 300;
+    }
+}
