@@ -1,0 +1,14 @@
+@import '../variables';
+
+.intro--solution {
+    height: 150px;
+    width: 100%;
+    background: blue;
+    background-size: cover;
+    background-position: center;
+    color: $primary-color;
+    h3 {
+        font-size: 35px;
+        padding: 70px 0 20px 25px;
+    }
+}

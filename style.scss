@@ -3,14 +3,8 @@
     padding: 0;
 }
 
-$primary-color: white;
-$secondary-color: cyan;
-$dark : black;
-$red : rgb(160, 116, 116);
-$burger: rgb(26, 78, 78);
-$burger-color: red;
-$grey: grey;
-
+@import './solution/solution';
+@import './variables';
 body {
     width: 100%;
     background: $dark;
@@ -124,8 +118,8 @@ nav {
         position: relative;
     }
     .menu-btn {
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         background-color: transparent;
         position: absolute;
         top: 16px;

@@ -2,6 +2,17 @@
   margin: 0;
   padding: 0; }
 
+.intro--solution {
+  height: 150px;
+  width: 100%;
+  background: blue;
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  .intro--solution h3 {
+    font-size: 35px;
+    padding: 70px 0 20px 25px; }
+
 body {
   width: 100%;
   background: black;
@@ -93,8 +104,8 @@ nav {
     background-color: cyan;
     position: relative; }
   .head2 .menu-btn {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     position: absolute;
     top: 16px;
