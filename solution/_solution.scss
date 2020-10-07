@@ -3,12 +3,120 @@
 .intro--solution {
     height: 150px;
     width: 100%;
-    background: blue;
-    background-size: cover;
-    background-position: center;
     color: $primary-color;
     h3 {
         font-size: 35px;
         padding: 70px 0 20px 25px;
     }
+}
+
+.platform {
+    height: 400px;
+    background: lighten($grey, 40);
+    i {
+        font-size: 200px;
+        color: lighten($secondary-color, 30);
+        padding: 20px 40px;
+    }
+    p {
+        font-size: 15px;
+        padding: 0px 40px 0;
+    }
+}
+
+.sec-1 {
+    margin-top: 30px;
+    h2 {
+        font-weight: map-get($font-weights, "bold");
+    }
+}
+
+.article {
+    margin: 10px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .7em;
+    .card {
+        height: 120px;
+        width:100%;
+        background-color: rgb(66, 231, 231);
+        &:hover, .compare:hover {
+            background-color: rgb(59, 180, 180);
+        }
+        a {
+            &:hover {
+                padding-left: 20px;
+                transition: ease-in 200ms;
+            }
+            padding-left: 15px;
+            color: black;
+            text-decoration: none;
+            h3 {
+                padding:5px 0 10px 15px;
+            }
+            p, a {
+                font-size: 11px;
+                padding:0 0 40px 15px;
+            }
+        }
+    }
+}
+
+.features {
+    margin-top: 40px;
+}
+
+table {
+    font-size: 10px;
+    width: 100%;
+    thead {
+        color: $grey;
+    }
+    tbody {
+        th {
+            width: 20%;
+            background-color: $secondary-color;
+            color: $primary-color;
+            padding: 20px;
+        }
+        tr {
+            i {
+                font-size: 30px;
+                background-color: rgb(13, 233, 13);
+                border-radius: 10px;
+                color: $primary-color;
+            }
+            &:nth-child(odd) {
+                background-color: lighten($grey, 45);
+            }
+            th {
+                &:nth-child(odd) {
+                    background-color: darken($secondary-color, 30);
+                }
+            }
+        }
+    }
+}
+
+.sec-2 {
+    margin: 60px 0 40px;
+    h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        padding-right: 30px;
+        color: $dark;
+        font-weight: 500;
+    }
+}
+
+.pa {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.art {
+    padding-bottom: 60px;
 }

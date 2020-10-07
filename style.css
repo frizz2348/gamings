@@ -5,13 +5,91 @@
 .intro--solution {
   height: 150px;
   width: 100%;
-  background: blue;
-  background-size: cover;
-  background-position: center;
   color: white; }
   .intro--solution h3 {
     font-size: 35px;
     padding: 70px 0 20px 25px; }
+
+.platform {
+  height: 400px;
+  background: #e6e6e6; }
+  .platform i {
+    font-size: 200px;
+    color: #99ffff;
+    padding: 20px 40px; }
+  .platform p {
+    font-size: 15px;
+    padding: 0px 40px 0; }
+
+.sec-1 {
+  margin-top: 30px; }
+  .sec-1 h2 {
+    font-weight: 800; }
+
+.article {
+  margin: 10px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .7em; }
+  .article .card {
+    height: 120px;
+    width: 100%;
+    background-color: #42e7e7; }
+    .article .card:hover, .article .card .compare:hover {
+      background-color: #3bb4b4; }
+    .article .card a {
+      padding-left: 15px;
+      color: black;
+      text-decoration: none; }
+      .article .card a:hover {
+        padding-left: 20px;
+        transition: ease-in 200ms; }
+      .article .card a h3 {
+        padding: 5px 0 10px 15px; }
+      .article .card a p, .article .card a a {
+        font-size: 11px;
+        padding: 0 0 40px 15px; }
+
+.features {
+  margin-top: 40px; }
+
+table {
+  font-size: 10px;
+  width: 100%; }
+  table thead {
+    color: grey; }
+  table tbody th {
+    width: 20%;
+    background-color: cyan;
+    color: white;
+    padding: 20px; }
+  table tbody tr i {
+    font-size: 30px;
+    background-color: #0de90d;
+    border-radius: 10px;
+    color: white; }
+  table tbody tr:nth-child(odd) {
+    background-color: #f3f3f3; }
+  table tbody tr th:nth-child(odd) {
+    background-color: #006666; }
+
+.sec-2 {
+  margin: 60px 0 40px; }
+  .sec-2 h2 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .sec-2 p {
+    font-size: 18px;
+    padding-right: 30px;
+    color: black;
+    font-weight: 500; }
+
+.pa {
+  padding-top: 30px;
+  margin-bottom: 40px; }
+
+.art {
+  padding-bottom: 60px; }
 
 body {
   width: 100%;
