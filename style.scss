@@ -5,6 +5,10 @@
 
 @import './solution/solution';
 @import './variables';
+@import './products/products';
+@import './news/news';
+
+
 body {
     width: 100%;
     background: $dark;

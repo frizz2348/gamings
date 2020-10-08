@@ -14,7 +14,7 @@
   height: 400px;
   background: #e6e6e6; }
   .platform i {
-    font-size: 200px;
+    font-size: 140px;
     color: #99ffff;
     padding: 20px 40px; }
   .platform p {
@@ -90,6 +90,53 @@ table {
 
 .art {
   padding-bottom: 60px; }
+
+.intro--products {
+  height: 150px;
+  width: 100%;
+  color: white; }
+  .intro--products h3 {
+    font-size: 35px;
+    padding: 70px 0 20px 25px; }
+
+.para {
+  background-color: #e6e6e6;
+  height: 180px; }
+  .para p {
+    padding: 40px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px; }
+
+.section--products {
+  margin-bottom: 60px; }
+  .section--products .card--products {
+    margin: 45px 10px 0 25px; }
+    .section--products .card--products a {
+      color: #006666; }
+      .section--products .card--products a:hover {
+        text-decoration: none; }
+    .section--products .card--products p {
+      margin-top: 20px;
+      font-size: 12px;
+      font-weight: 500; }
+
+.intro--news {
+  height: 280px;
+  width: 100%;
+  color: white; }
+  .intro--news div {
+    font-size: 30px;
+    padding: 180px 120px 30px; }
+    .intro--news div a {
+      font-size: 14px;
+      text-decoration: none;
+      padding-left: 40px;
+      color: #00b3b3; }
+
+.para--news {
+  height: 100px;
+  padding: 40px 0 0 0; }
 
 body {
   width: 100%;

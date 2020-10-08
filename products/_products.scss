@@ -1,0 +1,41 @@
+@import '../variables';
+
+.intro--products {
+    height: 150px;
+    width: 100%;
+    color: $primary-color;
+    h3 {
+        font-size: 35px;
+        padding: 70px 0 20px 25px;
+    }
+}
+
+.para {
+    background-color: lighten($grey, 40);
+    height: 180px;
+    p {
+        padding: 40px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+}
+
+.section--products {
+    margin-bottom: 60px;
+    .card--products {
+        margin: 45px 10px 0 25px;
+        a {
+            color: darken($secondary-color, 30);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        p {
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
+
