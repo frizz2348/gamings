@@ -148,6 +148,27 @@ table {
     font-size: 12px;
     font-weight: 500; }
 
+.div {
+  padding: 40px 15px 20px; }
+  .div h2 {
+    font-weight: 900;
+    margin-bottom: 40px; }
+  .div li {
+    list-style-type: disc;
+    margin-left: 60px;
+    font-size: 12px;
+    font-weight: 500; }
+  .div a {
+    color: #006666; }
+    .div a:hover {
+      text-decoration: none; }
+  .div p {
+    margin: 15px 0;
+    font-size: 12px;
+    font-weight: 500; }
+  .div strongli {
+    margin-top: 20px; }
+
 body {
   width: 100%;
   background: black;

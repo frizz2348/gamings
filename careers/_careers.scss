@@ -1,0 +1,29 @@
+@import '../variables';
+
+.div {
+    padding: 40px 15px 20px;
+    h2 {
+        font-weight: 900;
+        margin-bottom: 40px;
+    }
+    li {
+        list-style-type: disc;
+        margin-left: 60px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    a {
+        color: darken($secondary-color, 30);
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    p {
+        margin: 15px 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    strong~li {
+        margin-top: 20px;
+    }
+}
