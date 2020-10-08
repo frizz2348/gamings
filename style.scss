@@ -3,10 +3,16 @@
     padding: 0;
 }
 
-@import './solution/solution';
 @import './variables';
+@import './solution/solution';
 @import './products/products';
+@import './games/game';
 @import './news/news';
+@import './faq/faq';
+@import './careers/careers';
+@import './about/about';
+@import './contact/contact';
+
 
 
 body {
@@ -72,6 +78,9 @@ nav {
         &:hover {
             background-color: darkcyan;
             transition: ease-in 100ms;
+        }
+        &.active {
+            background-color: $secondary-color;
         }
         
         img {

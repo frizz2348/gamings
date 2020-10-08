@@ -14,7 +14,7 @@
   height: 400px;
   background: #e6e6e6; }
   .platform i {
-    font-size: 140px;
+    font-size: 85px;
     color: #99ffff;
     padding: 20px 40px; }
   .platform p {
@@ -138,6 +138,16 @@ table {
   height: 100px;
   padding: 40px 0 0 0; }
 
+.divs {
+  margin: 30px 0 10px 15px; }
+  .divs h2 {
+    padding-bottom: 20px;
+    font-weight: 900; }
+  .divs p {
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: 500; }
+
 body {
   width: 100%;
   background: black;
@@ -192,6 +202,8 @@ nav {
     nav li:hover {
       background-color: darkcyan;
       transition: ease-in 100ms; }
+    nav li.active {
+      background-color: cyan; }
     nav li img {
       width: 20px;
       height: 20px;
