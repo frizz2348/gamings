@@ -166,8 +166,39 @@ table {
     margin: 15px 0;
     font-size: 12px;
     font-weight: 500; }
-  .div strongli {
+  .div strong ~ li {
     margin-top: 20px; }
+
+.para--about {
+  height: 100px;
+  padding: 0 10px 30px; }
+
+.section--about {
+  margin: 40px 20px 10px;
+  font-size: 12px; }
+  .section--about p {
+    padding: 15px 0; }
+  .section--about h2 {
+    font-size: 30px;
+    margin: 0 0 15px; }
+  .section--about img {
+    width: 90%;
+    margin: 10px 5%; }
+  .section--about a {
+    color: #006666; }
+    .section--about a:hover {
+      text-decoration: none; }
+  .section--about li {
+    margin: 4px 0 0 40px;
+    font-weight: 500; }
+
+.press {
+  margin-bottom: 40px; }
+
+.about--fundamental h2 {
+  font-size: 26px; }
+.about--fundamental li {
+  margin-top: 20px; }
 
 body {
   width: 100%;

@@ -1,0 +1,46 @@
+@import '../variables';
+
+
+.para--about {
+    height: 100px;
+    padding: 0 10px 30px;
+}
+
+.section--about {
+    margin: 40px 20px 10px;
+    font-size: 12px;
+    p {
+        padding: 15px 0;
+    }
+    h2 {
+        font-size: 30px;
+        margin: 0 0 15px;
+    }
+    img {
+        width: 90%;
+        margin: 10px 5%;
+    }
+    a {
+        color: darken($secondary-color, 30);
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    li {
+        margin: 4px 0 0 40px;
+        font-weight: 500;
+    }
+}
+
+.press {
+    margin-bottom: 40px;
+}
+
+.about--fundamental {
+    h2 {
+        font-size: 26px;
+    }
+    li {
+        margin-top: 20px;
+    }
+}
