@@ -36,7 +36,6 @@ header {
     background-position: center;
     background-color: $secondary-color;
     height: 120px;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 9fr 1fr;
     color: $burger-color;
@@ -129,11 +128,11 @@ nav {
         position: relative;
     }
     .menu-btn {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         background-color: transparent;
         position: absolute;
-        top: 16px;
+        top: 12px;
         right: 20px;
         z-index: 1;
         &.open {
@@ -351,6 +350,12 @@ nav {
         padding-left: 30px;
         height: 50px;
         border-bottom: 1px solid $grey;
+        &--box {
+            width: 100%;
+        }
+        p {
+            visibility: hidden;
+        }
         span i{
             height: 180px;
             width: 180px;

@@ -1,9 +1,60 @@
 @import './variables';
 
-@media (min-width: 680px) {
+@media (min-width: 620px) {
+    /*** This is the div container element..
     .container {
-        background: $secondary-color;
+
     }
+    ***/
+    /* Working on the header increase the height along with a higher px   ****/
+
+    header {
+        height: 160px;
+        .head {
+            margin-top: 90px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+    }
+
+    /* Adjusting the navigation button by the right hand side  ****/
+
+    .menu-nav {
+        .menu-btn {
+            height: 50px;
+            width: 50px;
+            top: 16px;
+            right: 16px;
+            &__burger {
+                height: 4px;
+                width: 35px;
+                right: 5px;
+                top: 20px;
+            }
+        }
+    }
+
+    /****  Working on the various navbar headers, so the height increases along with the new view width ***/
+
+    .intro, .intro--solution {
+        height: 220px;
+        h3 {
+            font-size: 40px;
+            padding-top: 130px;
+        }
+        &--home {
+            h3 {
+                padding-top: 10px;
+            }
+        }
+    }
+    
+    /**** Adjusting the grid from two columns to three columns immediately the view width reaches 620px and above  ***/
+
     .article3 {
         height: 600px;
         display: grid;
@@ -11,12 +62,173 @@
         .i {
             border-bottom: 1px solid $grey;
             margin-bottom: 15px;
-        p {
+            p {
             font-size: 14px;
+            }
         }
-    
         div {
             margin-left: 10px;
         }
-    }}
+    }
+
+    /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
+    .products__two {
+        height: 1050px;
+        i {
+            font-size: 55px;
+            color: rgb(211, 230, 230);
+        }
+        &-cards {
+            padding-left: 30px;
+            height: 150px;
+            border-bottom: 1px solid $grey;
+            p {
+                visibility: visible;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 800;
+                padding: 0 0 15px 10px;
+            }
+
+        }
+
+    /*** This makes the paragraph shrinks in width as it's better having the paragraph wrap and not just straight therefore straining the eyes while trying to read it ****/
+        &--box {
+            width: 50%;
+        }
+    }
+    .sec-1 {
+        p {
+            width: 50%;
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    /****  Increasing the paragraoh and the header sizes so as to align with the new screen width. ****/
+    .features, .sec-2, pa{
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 22px;
+            color: $dark;
+            font-weight: 500;
+        }
+    }
+    /**** Styling the first paragraph underneath the header element ****/
+    .para {
+        p {
+            padding: 45px 20px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+    }
+
+    /**** Working on the "Products PAge" Increasing the h4 elements and the paragraoh font to fit in with the new screen width.. ***/
+    
+    .section--products {
+        .card--products {
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /*** Working on the FAQ page, increasing the font sizes of both the h3 elements and the paragragphs element...  ***/
+
+    
+    .divs {
+        h2 {
+            padding-bottom: 20px;
+            font-weight: 900;
+            font-size: 32px;
+        }
+        p {
+
+            font-size: 14px;
+            font-weight: 450;
+        }
+    }
+
+
+    /*** Working on the "CAREER" page, increasing the font sizes of both the h3 elements and the paragragphs element ******/
+
+    .div {
+        padding: 40px 15px 20px;
+        h2 {
+            font-size: 35px;
+            margin: 0 0 20px 0;
+        }
+        li {
+            font-size: 14px;
+            font-weight: 480;
+        }
+        p {
+            margin: 15px 0;
+            font-size: 14px;
+            font-weight: 450;
+            font-style: italic;
+        }
+    }
+
+    /*** Working on the "About Us page", increasing the font sizes of both the h3 elements and the paragragphs element ****/
+
+    .section--about {
+        margin: 40px 20px 10px;
+        font-size: 12px;
+        p {
+            padding: 15px 0;
+        }
+        h2 {
+            font-size: 30px;
+            margin: 0 0 15px;
+        }
+        img {
+            width: 90%;
+            margin: 10px 5%;
+        }
+        a {
+            color: darken($secondary-color, 30);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        li {
+            margin: 4px 0 0 40px;
+            font-weight: 500;
+        }
+    }
+    
+    .press {
+        h2 {
+            font-size: 38px;
+        }
+        li {
+            font-size: 14px;
+            font-weight: 480;
+        }
+    }
+    
+    .about--text__images {
+        grid-template-columns: 1fr 1fr;
+        img {
+            height: 300px;
+        }
+    }
+    .about--awards {
+        h2 {
+            font-size: 38px;
+        }
+    }
 }

@@ -11,12 +11,9 @@
     padding: 70px 0 20px 25px; }
 
 .platform {
-  height: 400px;
+  height: 160px;
+  padding: 50px 0 0;
   background: #e6e6e6; }
-  .platform i {
-    font-size: 85px;
-    color: #99ffff;
-    padding: 20px 40px; }
   .platform p {
     font-size: 15px;
     padding: 0px 40px 0; }
@@ -85,8 +82,8 @@ table {
     font-weight: 500; }
 
 .pa {
-  padding-top: 30px;
-  margin-bottom: 40px; }
+  padding: 30px 15px 0;
+  margin-bottom: 30px; }
 
 .art {
   padding-bottom: 60px; }
@@ -100,8 +97,7 @@ table {
     padding: 70px 0 20px 25px; }
 
 .para {
-  background-color: #e6e6e6;
-  height: 180px; }
+  background-color: #e6e6e6; }
   .para p {
     padding: 40px 20px;
     font-size: 15px;
@@ -122,12 +118,11 @@ table {
       font-weight: 500; }
 
 .intro--news {
-  height: 280px;
-  width: 100%;
+  height: 200px;
   color: white; }
   .intro--news div {
     font-size: 30px;
-    padding: 180px 120px 30px; }
+    padding: 40px 120px 30px; }
     .intro--news div a {
       font-size: 14px;
       text-decoration: none;
@@ -157,7 +152,7 @@ table {
     list-style-type: disc;
     margin-left: 60px;
     font-size: 12px;
-    font-weight: 500; }
+    font-weight: 450; }
   .div a {
     color: #006666; }
     .div a:hover {
@@ -169,15 +164,12 @@ table {
   .div strong ~ li {
     margin-top: 20px; }
 
-.para--about {
-  height: 100px;
-  padding: 0 10px 30px; }
-
 .section--about {
-  margin: 40px 20px 10px;
-  font-size: 12px; }
+  margin: 40px 20px 10px; }
   .section--about p {
-    padding: 15px 0; }
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 22px; }
   .section--about h2 {
     font-size: 30px;
     margin: 0 0 15px; }
@@ -192,6 +184,12 @@ table {
     margin: 4px 0 0 40px;
     font-weight: 500; }
 
+.about--text__images {
+  display: grid; }
+
+.about--awards {
+  margin: 40px 0 30px; }
+
 .press {
   margin-bottom: 40px; }
 
@@ -200,10 +198,44 @@ table {
 .about--fundamental li {
   margin-top: 20px; }
 
-@media (min-width: 680px) {
-  .container {
-    background: cyan; }
+@media (min-width: 620px) {
+    /*** This is the div container element..
+    .container {
 
+    }
+    ***/
+  /* Working on the header increase the height along with a higher px   ****/
+  header {
+    height: 160px; }
+    header .head {
+      margin-top: 90px; }
+    header h2 {
+      font-size: 30px; }
+    header h4 {
+      font-size: 14px; }
+
+  /* Adjusting the navigation button by the right hand side  ****/
+  .menu-nav .menu-btn {
+    height: 50px;
+    width: 50px;
+    top: 16px;
+    right: 16px; }
+    .menu-nav .menu-btn__burger {
+      height: 4px;
+      width: 35px;
+      right: 5px;
+      top: 20px; }
+
+  /****  Working on the various navbar headers, so the height increases along with the new view width ***/
+  .intro, .intro--solution {
+    height: 220px; }
+    .intro h3, .intro--solution h3 {
+      font-size: 40px;
+      padding-top: 130px; }
+    .intro--home h3, .intro--solution--home h3 {
+      padding-top: 10px; }
+
+  /**** Adjusting the grid from two columns to three columns immediately the view width reaches 620px and above  ***/
   .article3 {
     height: 600px;
     display: grid;
@@ -213,8 +245,115 @@ table {
       margin-bottom: 15px; }
       .article3 .i p {
         font-size: 14px; }
-      .article3 .i div {
-        margin-left: 10px; } }
+    .article3 div {
+      margin-left: 10px; }
+
+  /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
+  .products__two {
+    height: 1050px;
+    /*** This makes the paragraph shrinks in width as it's better having the paragraph wrap and not just straight therefore straining the eyes while trying to read it ****/ }
+    .products__two i {
+      font-size: 55px;
+      color: #d3e6e6; }
+    .products__two-cards {
+      padding-left: 30px;
+      height: 150px;
+      border-bottom: 1px solid grey; }
+      .products__two-cards p {
+        visibility: visible;
+        font-size: 12px;
+        margin-top: 10px; }
+      .products__two-cards span {
+        font-size: 18px;
+        font-weight: 800;
+        padding: 0 0 15px 10px; }
+    .products__two--box {
+      width: 50%; }
+
+  .sec-1 p {
+    width: 50%;
+    font-size: 18px; }
+  .sec-1 h2 {
+    font-size: 30px; }
+
+  /****  Increasing the paragraoh and the header sizes so as to align with the new screen width. ****/
+  .features h2, .sec-2 h2, pa h2 {
+    font-size: 30px; }
+  .features p, .sec-2 p, pa p {
+    font-size: 22px;
+    color: black;
+    font-weight: 500; }
+
+  /**** Styling the first paragraph underneath the header element ****/
+  .para p {
+    padding: 45px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; }
+
+  /**** Working on the "Products PAge" Increasing the h4 elements and the paragraoh font to fit in with the new screen width.. ***/
+  .section--products .card--products h4 {
+    font-size: 22px; }
+  .section--products .card--products p {
+    font-size: 14px; }
+
+  /*** Working on the FAQ page, increasing the font sizes of both the h3 elements and the paragragphs element...  ***/
+  .divs h2 {
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 32px; }
+  .divs p {
+    font-size: 14px;
+    font-weight: 450; }
+
+  /*** Working on the "CAREER" page, increasing the font sizes of both the h3 elements and the paragragphs element ******/
+  .div {
+    padding: 40px 15px 20px; }
+    .div h2 {
+      font-size: 35px;
+      margin: 0 0 20px 0; }
+    .div li {
+      font-size: 14px;
+      font-weight: 480; }
+    .div p {
+      margin: 15px 0;
+      font-size: 14px;
+      font-weight: 450;
+      font-style: italic; }
+
+  /*** Working on the "About Us page", increasing the font sizes of both the h3 elements and the paragragphs element ****/
+  .section--about {
+    margin: 40px 20px 10px;
+    font-size: 12px; }
+    .section--about p {
+      padding: 15px 0; }
+    .section--about h2 {
+      font-size: 30px;
+      margin: 0 0 15px; }
+    .section--about img {
+      width: 90%;
+      margin: 10px 5%; }
+    .section--about a {
+      color: #006666; }
+      .section--about a:hover {
+        text-decoration: none; }
+    .section--about li {
+      margin: 4px 0 0 40px;
+      font-weight: 500; }
+
+  .press h2 {
+    font-size: 38px; }
+  .press li {
+    font-size: 14px;
+    font-weight: 480; }
+
+  .about--text__images {
+    grid-template-columns: 1fr 1fr; }
+    .about--text__images img {
+      height: 300px; }
+
+  .about--awards h2 {
+    font-size: 38px; } }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden; }
@@ -232,7 +371,6 @@ header {
   background-position: center;
   background-color: cyan;
   height: 120px;
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: 9fr 1fr;
   color: red; }
@@ -306,11 +444,11 @@ nav {
     background-color: cyan;
     position: relative; }
   .head2 .menu-btn {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
     position: absolute;
-    top: 16px;
+    top: 12px;
     right: 20px;
     z-index: 1; }
     .head2 .menu-btn.open {
@@ -486,6 +624,10 @@ nav {
     padding-left: 30px;
     height: 50px;
     border-bottom: 1px solid grey; }
+    .products__two-cards--box {
+      width: 100%; }
+    .products__two-cards p {
+      visibility: hidden; }
     .products__two-cards span i {
       height: 180px;
       width: 180px;
@@ -658,10 +800,44 @@ footer {
   footer span {
     font-weight: 300; }
 
-@media (min-width: 680px) {
-  .container {
-    background: cyan; }
+@media (min-width: 620px) {
+    /*** This is the div container element..
+    .container {
 
+    }
+    ***/
+  /* Working on the header increase the height along with a higher px   ****/
+  header {
+    height: 160px; }
+    header .head {
+      margin-top: 90px; }
+    header h2 {
+      font-size: 30px; }
+    header h4 {
+      font-size: 14px; }
+
+  /* Adjusting the navigation button by the right hand side  ****/
+  .menu-nav .menu-btn {
+    height: 50px;
+    width: 50px;
+    top: 16px;
+    right: 16px; }
+    .menu-nav .menu-btn__burger {
+      height: 4px;
+      width: 35px;
+      right: 5px;
+      top: 20px; }
+
+  /****  Working on the various navbar headers, so the height increases along with the new view width ***/
+  .intro, .intro--solution {
+    height: 220px; }
+    .intro h3, .intro--solution h3 {
+      font-size: 40px;
+      padding-top: 130px; }
+    .intro--home h3, .intro--solution--home h3 {
+      padding-top: 10px; }
+
+  /**** Adjusting the grid from two columns to three columns immediately the view width reaches 620px and above  ***/
   .article3 {
     height: 600px;
     display: grid;
@@ -671,7 +847,114 @@ footer {
       margin-bottom: 15px; }
       .article3 .i p {
         font-size: 14px; }
-      .article3 .i div {
-        margin-left: 10px; } }
+    .article3 div {
+      margin-left: 10px; }
+
+  /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
+  .products__two {
+    height: 1050px;
+    /*** This makes the paragraph shrinks in width as it's better having the paragraph wrap and not just straight therefore straining the eyes while trying to read it ****/ }
+    .products__two i {
+      font-size: 55px;
+      color: #d3e6e6; }
+    .products__two-cards {
+      padding-left: 30px;
+      height: 150px;
+      border-bottom: 1px solid grey; }
+      .products__two-cards p {
+        visibility: visible;
+        font-size: 12px;
+        margin-top: 10px; }
+      .products__two-cards span {
+        font-size: 18px;
+        font-weight: 800;
+        padding: 0 0 15px 10px; }
+    .products__two--box {
+      width: 50%; }
+
+  .sec-1 p {
+    width: 50%;
+    font-size: 18px; }
+  .sec-1 h2 {
+    font-size: 30px; }
+
+  /****  Increasing the paragraoh and the header sizes so as to align with the new screen width. ****/
+  .features h2, .sec-2 h2, pa h2 {
+    font-size: 30px; }
+  .features p, .sec-2 p, pa p {
+    font-size: 22px;
+    color: black;
+    font-weight: 500; }
+
+  /**** Styling the first paragraph underneath the header element ****/
+  .para p {
+    padding: 45px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; }
+
+  /**** Working on the "Products PAge" Increasing the h4 elements and the paragraoh font to fit in with the new screen width.. ***/
+  .section--products .card--products h4 {
+    font-size: 22px; }
+  .section--products .card--products p {
+    font-size: 14px; }
+
+  /*** Working on the FAQ page, increasing the font sizes of both the h3 elements and the paragragphs element...  ***/
+  .divs h2 {
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 32px; }
+  .divs p {
+    font-size: 14px;
+    font-weight: 450; }
+
+  /*** Working on the "CAREER" page, increasing the font sizes of both the h3 elements and the paragragphs element ******/
+  .div {
+    padding: 40px 15px 20px; }
+    .div h2 {
+      font-size: 35px;
+      margin: 0 0 20px 0; }
+    .div li {
+      font-size: 14px;
+      font-weight: 480; }
+    .div p {
+      margin: 15px 0;
+      font-size: 14px;
+      font-weight: 450;
+      font-style: italic; }
+
+  /*** Working on the "About Us page", increasing the font sizes of both the h3 elements and the paragragphs element ****/
+  .section--about {
+    margin: 40px 20px 10px;
+    font-size: 12px; }
+    .section--about p {
+      padding: 15px 0; }
+    .section--about h2 {
+      font-size: 30px;
+      margin: 0 0 15px; }
+    .section--about img {
+      width: 90%;
+      margin: 10px 5%; }
+    .section--about a {
+      color: #006666; }
+      .section--about a:hover {
+        text-decoration: none; }
+    .section--about li {
+      margin: 4px 0 0 40px;
+      font-weight: 500; }
+
+  .press h2 {
+    font-size: 38px; }
+  .press li {
+    font-size: 14px;
+    font-weight: 480; }
+
+  .about--text__images {
+    grid-template-columns: 1fr 1fr; }
+    .about--text__images img {
+      height: 300px; }
+
+  .about--awards h2 {
+    font-size: 38px; } }
 
 /*# sourceMappingURL=style.css.map */

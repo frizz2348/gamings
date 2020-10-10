@@ -1,12 +1,12 @@
 @import '../variables';
 
 .intro--news {
-    height: 280px;
-    width: 100%;
+    height: 200px;
     color: $primary-color;
+    
     div {
         font-size: 30px;
-        padding: 180px 120px 30px;
+        padding: 40px 120px 30px;
         
         a {
             font-size: 14px;
