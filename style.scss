@@ -12,13 +12,12 @@
 @import './careers/careers';
 @import './about/about';
 @import './contact/contact';
-
+@import './mediaqueries';
 
 
 body {
-    width: 100%;
-    background: $dark;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
     &.open {
         overflow: hidden;
         background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918),);
@@ -37,7 +36,6 @@ header {
     background-position: center;
     background-color: $secondary-color;
     height: 120px;
-    width: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 9fr 1fr;
@@ -229,6 +227,15 @@ nav {
     background-size: cover;
     background-position: center;
     color: $primary-color;
+    a {
+        color: $secondary-color;
+        border-bottom: 1px solid darken($primary-color, 40);
+        text-decoration: none;
+        &:hover {
+            border-bottom: 1px solid $secondary-color;
+            color: $secondary-color;
+        }
+    }
 
     h3 {
         font-size: 20px;
@@ -464,8 +471,8 @@ section {
     background-position: center;
     
     .contact-us {
-        margin: 0 0 30px 60px;
-        padding: 80px 0 0 40px;
+        width: 50%;
+        margin: 0 auto;
         h1 {
             color: $grey;
             font-size: 50px;
@@ -497,10 +504,10 @@ section {
     }
 
     .form {
-        height: 420px;
         width: 300px;
-        background-color: rgba(30, 228, 211, 0.698);
-        margin-left: 30px;
+        background-color: rgba(235, 241, 241, 0.911);
+        margin: 0 auto;
+        border-radius: .9em;
     }
     label, textarea {
         display: block;
@@ -524,16 +531,17 @@ section {
     }
 
     button {
-        background-color: rgb(141, 33, 33);
-        color: $primary-color;
+        background-color: $secondary-color;
+        color: $dark;
         width: 40%;
         border-radius: .8em;
         height: 30px;
-        margin:0 0 0 5%;
+        margin:0 0 5% 5%;
         cursor: pointer;
         &:hover {
-            background: red;
-            transition: ease-in 200ms;
+            background-color: $dark;
+            color: $secondary-color;
+            transition: ease-in 300ms;
         }
     }
 }
@@ -578,3 +586,5 @@ footer {
         font-weight: 300;
     }
 }
+
+@import './mediaqueries';

@@ -200,10 +200,24 @@ table {
 .about--fundamental li {
   margin-top: 20px; }
 
+@media (min-width: 680px) {
+  .container {
+    background: cyan; }
+
+  .article3 {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .article3 .i {
+      border-bottom: 1px solid grey;
+      margin-bottom: 15px; }
+      .article3 .i p {
+        font-size: 14px; }
+      .article3 .i div {
+        margin-left: 10px; } }
 body {
-  width: 100%;
-  background: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; }
   body.open {
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918)); }
@@ -218,7 +232,6 @@ header {
   background-position: center;
   background-color: cyan;
   height: 120px;
-  width: 100%;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 9fr 1fr;
@@ -375,6 +388,13 @@ nav {
   background-size: cover;
   background-position: center;
   color: white; }
+  .intro a {
+    color: cyan;
+    border-bottom: 1px solid #999999;
+    text-decoration: none; }
+    .intro a:hover {
+      border-bottom: 1px solid cyan;
+      color: cyan; }
   .intro h3 {
     font-size: 20px;
     padding: 30px 0 20px 25px; }
@@ -551,8 +571,8 @@ section .brands-2 i {
   background-size: cover;
   background-position: center; }
   .register .contact-us {
-    margin: 0 0 30px 60px;
-    padding: 80px 0 0 40px; }
+    width: 50%;
+    margin: 0 auto; }
     .register .contact-us h1 {
       color: grey;
       font-size: 50px;
@@ -575,10 +595,10 @@ section .brands-2 i {
         font-size: 13px;
         font-weight: 500; }
   .register .form {
-    height: 420px;
     width: 300px;
-    background-color: rgba(30, 228, 211, 0.698);
-    margin-left: 30px; }
+    background-color: rgba(235, 241, 241, 0.911);
+    margin: 0 auto;
+    border-radius: .9em; }
   .register label, .register textarea {
     display: block;
     font-size: 12px;
@@ -595,16 +615,17 @@ section .brands-2 i {
   .register textarea {
     height: 100px; }
   .register button {
-    background-color: #8d2121;
-    color: white;
+    background-color: cyan;
+    color: black;
     width: 40%;
     border-radius: .8em;
     height: 30px;
-    margin: 0 0 0 5%;
+    margin: 0 0 5% 5%;
     cursor: pointer; }
     .register button:hover {
-      background: red;
-      transition: ease-in 200ms; }
+      background-color: black;
+      color: cyan;
+      transition: ease-in 300ms; }
 
 .section-last {
   background: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.829)), url("images/img5.jpeg");
@@ -636,5 +657,21 @@ footer {
   font-weight: 500; }
   footer span {
     font-weight: 300; }
+
+@media (min-width: 680px) {
+  .container {
+    background: cyan; }
+
+  .article3 {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .article3 .i {
+      border-bottom: 1px solid grey;
+      margin-bottom: 15px; }
+      .article3 .i p {
+        font-size: 14px; }
+      .article3 .i div {
+        margin-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
