@@ -73,7 +73,10 @@
 
     /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
     .products__two {
-        height: 1050px;
+        height: 1100px;
+       &.gradient {
+           height: 800px;
+       }
         i {
             font-size: 55px;
             color: rgb(211, 230, 230);
@@ -229,6 +232,168 @@
     .about--awards {
         h2 {
             font-size: 38px;
+        }
+    }
+}
+
+@media(min-width: 720px) {
+
+    /**** Working on making the header height bigger and adjusting the grid template columns to make the sidebar wider than the H1 //frizzgamings box ****/
+    header {
+        height: 200px;
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    } 
+
+    /**** Adjusting the navbar with the menu icon to have larger part than the logo so as to accomodate the navbar links ****/
+
+    .head2 {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        width: 70vw;
+        height: 100%;
+        background-color: rgb(17, 14, 14);
+    }
+
+    /***** Making the menu button visibility hidden ****/
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    /**** Working on making the navbar display inline and removing the background color etc, and making it align properly at the top of the page.. **/
+    nav {
+        position: absolute;
+        background-color: transparent;
+        visibility:visible;
+        margin: 70px 5px 0 0;
+        width: 70%;
+        height: 100px;
+        padding: -40px 0;
+        text-align: center;
+        li {
+            display: inline;
+            font-size: 15px;
+            font-weight: 500;
+            border-bottom: none;
+            padding:0 0 0 10px;
+            margin: -10px 8px 0 0;
+            &:hover {
+                background-color: rgb(46, 238, 238);
+            }  
+        }
+        .menu {
+           visibility: hidden;
+        }
+       
+    }
+
+    /**** Shifting the contact numbers and social media links to the top of the page beside the website name ****/
+
+    .contact {
+        height: 60px;
+        width: 50%;
+        margin: -200px 0 140px 30%;
+        &.contact--hide {
+            display: block;
+        }
+        ul {
+            padding: 10px 10px 0 0;
+        }
+        li {
+            display: inline;
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+
+    /*** Making the image by the right handside smaller and shifting it to the right to accomodate the contact numbers  ****/
+
+    .head2 .img img {
+        width: 20px;
+        height: 20px;
+        margin:5px 5% 0 90%;
+    }
+
+    /*** Working on making the Headings bolder ****/
+
+    .products {
+        h2 {
+            font-size: 38px;
+        }
+        p {
+            width: 50%;
+        }
+        &__two--box {
+            width: 100%;
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                width: 50%;
+            }
+        }
+    }
+    .top--game {
+        padding: 30px 0 100px;
+        h2 {
+            font-size: 38px;
+        }
+        p {
+            width: 50%;
+            font-size: 18px;
+        }
+    }
+    .providers {
+        div h2 {
+            font-size: 75px;
+        }
+    }
+    .top--clients {
+        padding: 30px 0 10px;
+        h2 {
+            font-size: 38px;
+        }
+        p {
+            width: 50%;
+            font-size: 18px;
+        }
+    }
+    
+    .register .contact-us {
+        h2 {
+            color: $primary-color;
+            font-size: 54px;
+            font-weight: 900;
+        }
+        li {
+            line-height: 26px;
+            padding: 10px 0;
+            
+            i {
+                font-size: 26px;
+                background-color: $grey;
+                border-radius: 20%;
+                color: $primary-color;
+                margin-left: -30px;
+            }
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .intro--home {
+        padding-left: 60px;
+        h3 {
+            font-size: 25px;
+            
+        }
+        p {
+            font-size: 16px;
+            width: 50%;
         }
     }
 }

@@ -250,8 +250,10 @@ table {
 
   /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
   .products__two {
-    height: 1050px;
+    height: 1100px;
     /*** This makes the paragraph shrinks in width as it's better having the paragraph wrap and not just straight therefore straining the eyes while trying to read it ****/ }
+    .products__two.gradient {
+      height: 800px; }
     .products__two i {
       font-size: 55px;
       color: #d3e6e6; }
@@ -354,9 +356,126 @@ table {
 
   .about--awards h2 {
     font-size: 38px; } }
+@media (min-width: 720px) {
+  /**** Working on making the header height bigger and adjusting the grid template columns to make the sidebar wider than the H1 //frizzgamings box ****/
+  header {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 7fr; }
+
+  /**** Adjusting the navbar with the menu icon to have larger part than the logo so as to accomodate the navbar links ****/
+  .head2 {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 70vw;
+    height: 100%;
+    background-color: #110e0e; }
+
+  /***** Making the menu button visibility hidden ****/
+  .menu-btn {
+    visibility: hidden; }
+
+  /**** Working on making the navbar display inline and removing the background color etc, and making it align properly at the top of the page.. **/
+  nav {
+    position: absolute;
+    background-color: transparent;
+    visibility: visible;
+    margin: 70px 5px 0 0;
+    width: 70%;
+    height: 100px;
+    padding: -40px 0;
+    text-align: center; }
+    nav li {
+      display: inline;
+      font-size: 15px;
+      font-weight: 500;
+      border-bottom: none;
+      padding: 0 0 0 10px;
+      margin: -10px 8px 0 0; }
+      nav li:hover {
+        background-color: #2eeeee; }
+    nav .menu {
+      visibility: hidden; }
+
+  /**** Shifting the contact numbers and social media links to the top of the page beside the website name ****/
+  .contact {
+    height: 60px;
+    width: 50%;
+    margin: -200px 0 140px 30%; }
+    .contact.contact--hide {
+      display: block; }
+    .contact ul {
+      padding: 10px 10px 0 0; }
+    .contact li {
+      display: inline; }
+      .contact li a {
+        color: white; }
+
+  /*** Making the image by the right handside smaller and shifting it to the right to accomodate the contact numbers  ****/
+  .head2 .img img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5% 0 90%; }
+
+  /*** Working on making the Headings bolder ****/
+  .products h2 {
+    font-size: 38px; }
+  .products p {
+    width: 50%; }
+  .products__two--box {
+    width: 100%; }
+    .products__two--box h2 {
+      font-size: 40px; }
+    .products__two--box p {
+      width: 50%; }
+
+  .top--game {
+    padding: 30px 0 100px; }
+    .top--game h2 {
+      font-size: 38px; }
+    .top--game p {
+      width: 50%;
+      font-size: 18px; }
+
+  .providers div h2 {
+    font-size: 75px; }
+
+  .top--clients {
+    padding: 30px 0 10px; }
+    .top--clients h2 {
+      font-size: 38px; }
+    .top--clients p {
+      width: 50%;
+      font-size: 18px; }
+
+  .register .contact-us h2 {
+    color: white;
+    font-size: 54px;
+    font-weight: 900; }
+  .register .contact-us li {
+    line-height: 26px;
+    padding: 10px 0; }
+    .register .contact-us li i {
+      font-size: 26px;
+      background-color: grey;
+      border-radius: 20%;
+      color: white;
+      margin-left: -30px; }
+    .register .contact-us li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500; }
+
+  .intro--home {
+    padding-left: 60px; }
+    .intro--home h3 {
+      font-size: 25px; }
+    .intro--home p {
+      font-size: 16px;
+      width: 50%; } }
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918)); }
@@ -390,8 +509,6 @@ nav {
   position: fixed;
   top: 1px;
   right: 0;
-  width: 140px;
-  height: 120vw;
   background-color: white;
   visibility: hidden; }
   nav.open {
@@ -406,7 +523,8 @@ nav {
       background-color: darkcyan;
       transition: ease-in 100ms; }
     nav li.active {
-      background-color: cyan; }
+      background-color: #006666;
+      color: white; }
     nav li img {
       width: 20px;
       height: 20px;
@@ -502,6 +620,8 @@ nav {
   height: 155px;
   width: 100%;
   background: rgba(255, 1, 200, 0.37); }
+  .contact.contact--hide {
+    display: none; }
   .contact ul {
     padding-top: 30px; }
   .contact li {
@@ -596,10 +716,15 @@ nav {
   background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img8.jpeg") center center no-repeat;
   background-size: cover;
   background-position: center;
-  height: 560px;
+  height: 580px;
   width: 100%;
   color: white;
   margin-bottom: 40px; }
+  .products__two.gradient {
+    background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img5.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 700px; }
   .products__two i {
     font-size: 35px;
     color: #d3e6e6; }
@@ -686,12 +811,6 @@ section .brands-2 i {
   .feedback p {
     padding: 50px 20px 0; }
 
-.gradient {
-  background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img5.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 700px; }
-
 .article3 {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -715,7 +834,7 @@ section .brands-2 i {
   .register .contact-us {
     width: 50%;
     margin: 0 auto; }
-    .register .contact-us h1 {
+    .register .contact-us h2 {
       color: grey;
       font-size: 50px;
       font-weight: 900; }
@@ -852,8 +971,10 @@ footer {
 
   /*** Working on the paragraphs so as to make visible once the screen reaches 620px in width so as to show the hidden paragraph.. ****/
   .products__two {
-    height: 1050px;
+    height: 1100px;
     /*** This makes the paragraph shrinks in width as it's better having the paragraph wrap and not just straight therefore straining the eyes while trying to read it ****/ }
+    .products__two.gradient {
+      height: 800px; }
     .products__two i {
       font-size: 55px;
       color: #d3e6e6; }
@@ -956,5 +1077,123 @@ footer {
 
   .about--awards h2 {
     font-size: 38px; } }
+@media (min-width: 720px) {
+  /**** Working on making the header height bigger and adjusting the grid template columns to make the sidebar wider than the H1 //frizzgamings box ****/
+  header {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 3fr 7fr; }
+
+  /**** Adjusting the navbar with the menu icon to have larger part than the logo so as to accomodate the navbar links ****/
+  .head2 {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 70vw;
+    height: 100%;
+    background-color: #110e0e; }
+
+  /***** Making the menu button visibility hidden ****/
+  .menu-btn {
+    visibility: hidden; }
+
+  /**** Working on making the navbar display inline and removing the background color etc, and making it align properly at the top of the page.. **/
+  nav {
+    position: absolute;
+    background-color: transparent;
+    visibility: visible;
+    margin: 70px 5px 0 0;
+    width: 70%;
+    height: 100px;
+    padding: -40px 0;
+    text-align: center; }
+    nav li {
+      display: inline;
+      font-size: 15px;
+      font-weight: 500;
+      border-bottom: none;
+      padding: 0 0 0 10px;
+      margin: -10px 8px 0 0; }
+      nav li:hover {
+        background-color: #2eeeee; }
+    nav .menu {
+      visibility: hidden; }
+
+  /**** Shifting the contact numbers and social media links to the top of the page beside the website name ****/
+  .contact {
+    height: 60px;
+    width: 50%;
+    margin: -200px 0 140px 30%; }
+    .contact.contact--hide {
+      display: block; }
+    .contact ul {
+      padding: 10px 10px 0 0; }
+    .contact li {
+      display: inline; }
+      .contact li a {
+        color: white; }
+
+  /*** Making the image by the right handside smaller and shifting it to the right to accomodate the contact numbers  ****/
+  .head2 .img img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5% 0 90%; }
+
+  /*** Working on making the Headings bolder ****/
+  .products h2 {
+    font-size: 38px; }
+  .products p {
+    width: 50%; }
+  .products__two--box {
+    width: 100%; }
+    .products__two--box h2 {
+      font-size: 40px; }
+    .products__two--box p {
+      width: 50%; }
+
+  .top--game {
+    padding: 30px 0 100px; }
+    .top--game h2 {
+      font-size: 38px; }
+    .top--game p {
+      width: 50%;
+      font-size: 18px; }
+
+  .providers div h2 {
+    font-size: 75px; }
+
+  .top--clients {
+    padding: 30px 0 10px; }
+    .top--clients h2 {
+      font-size: 38px; }
+    .top--clients p {
+      width: 50%;
+      font-size: 18px; }
+
+  .register .contact-us h2 {
+    color: white;
+    font-size: 54px;
+    font-weight: 900; }
+  .register .contact-us li {
+    line-height: 26px;
+    padding: 10px 0; }
+    .register .contact-us li i {
+      font-size: 26px;
+      background-color: grey;
+      border-radius: 20%;
+      color: white;
+      margin-left: -30px; }
+    .register .contact-us li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500; }
+
+  .intro--home {
+    padding-left: 60px; }
+    .intro--home h3 {
+      font-size: 25px; }
+    .intro--home p {
+      font-size: 16px;
+      width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

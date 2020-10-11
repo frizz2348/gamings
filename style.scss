@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     &.open {
         overflow: hidden;
         background: linear-gradient(rgba(0, 0, 0, 0.972), rgba(0, 0, 0, 0.918),);
@@ -59,8 +59,8 @@ nav {
     position: fixed;
     top: 1px;
     right: 0;
-    width: 140px;
-    height:120vw;
+    //width: 140px;
+    //height:120vw;
     background-color: $primary-color;
     visibility: hidden;
     &.open {
@@ -77,7 +77,8 @@ nav {
             transition: ease-in 100ms;
         }
         &.active {
-            background-color: $secondary-color;
+            background-color: darken($secondary-color, 30);
+            color: $primary-color;
         }
         
         img {
@@ -196,6 +197,9 @@ nav {
     height: 155px;
     width: 100%;
     background: rgba(255, 1, 200, 0.37);
+    &.contact--hide {
+        display: none;
+    }
     ul {
         padding-top: 30px;
     }
@@ -317,10 +321,16 @@ nav {
     background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url('images/img8.jpeg') center center no-repeat;
     background-size: cover;
     background-position: center;
-    height: 560px;
+    height: 580px;
     width: 100%;
     color: $primary-color;
     margin-bottom: 40px;
+    &.gradient {
+        background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url('images/img5.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+    }
     i {
         font-size: 35px;
         color: rgb(211, 230, 230);
@@ -440,13 +450,6 @@ section {
     }
 }
 
-.gradient {
-    background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url('images/img5.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-}
-
 
 .article3 {
     display: grid;
@@ -478,7 +481,7 @@ section {
     .contact-us {
         width: 50%;
         margin: 0 auto;
-        h1 {
+        h2 {
             color: $grey;
             font-size: 50px;
             font-weight: 900;
