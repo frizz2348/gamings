@@ -476,6 +476,52 @@ table {
     grid-template-columns: 1fr 1fr; }
     .register .contact-us h2 {
       font-size: 42px; } }
+@media (min-width: 920px) {
+  /*** Reducing the header height so it can align with the current screen width, and also make it appear more attractive sine the width has increased, the height should decrease.. ***/
+  header {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 3fr 7fr; }
+    header .head {
+      margin-top: 70px; }
+
+  /**** Adjusting the navbar with the menu icon to have larger part than the logo so as to accomodate the navbar links ****/
+  .head2 {
+    grid-template-rows: 2fr 3fr; }
+
+  nav {
+    margin: 30px 5px 0 0;
+    padding: -40px 0; }
+
+  .contact {
+    margin: -156px 0 96px 30%; }
+
+  .intro--home {
+    padding: 40px 0 0 160px; }
+    .intro--home h3 {
+      font-size: 35px; }
+    .intro--home p {
+      font-size: 20px;
+      width: 70%; }
+
+  /**** Adjusting the cards so they can appear four on a roll since the current screen size can accomodate the four at once.. ***/
+  .article {
+    grid-template-columns: repeat(4, 1fr); }
+    .article3 {
+      grid-template-columns: repeat(6, 1fr); }
+    .article .cards {
+      height: 240px; }
+    .article .compare {
+      margin: 30px 0 35px; }
+
+  .products__two.gradient {
+    height: 440px; }
+  .products__two--box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .products__two--box p {
+      padding-top: 30px;
+      width: 70%; } }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
@@ -705,13 +751,13 @@ nav {
       .article .cards a .a {
         font-size: 10px; }
   .article .compare {
-    margin: 30px 0 35px;
+    margin: -30px 0 35px;
     background-color: #42e7e7; }
     .article .compare a {
       text-decoration: none;
       color: black; }
-  .article .hide {
-    visibility: hidden; }
+    .article .compare.hide {
+      visibility: hidden; }
 
 .products__two {
   background: linear-gradient(rgba(8, 5, 10, 0.7), rgba(14, 10, 10, 0.7), rgba(19, 14, 14, 0.7)), url("images/img8.jpeg") center center no-repeat;
@@ -1198,5 +1244,51 @@ footer {
     grid-template-columns: 1fr 1fr; }
     .register .contact-us h2 {
       font-size: 42px; } }
+@media (min-width: 920px) {
+  /*** Reducing the header height so it can align with the current screen width, and also make it appear more attractive sine the width has increased, the height should decrease.. ***/
+  header {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 3fr 7fr; }
+    header .head {
+      margin-top: 70px; }
+
+  /**** Adjusting the navbar with the menu icon to have larger part than the logo so as to accomodate the navbar links ****/
+  .head2 {
+    grid-template-rows: 2fr 3fr; }
+
+  nav {
+    margin: 30px 5px 0 0;
+    padding: -40px 0; }
+
+  .contact {
+    margin: -156px 0 96px 30%; }
+
+  .intro--home {
+    padding: 40px 0 0 160px; }
+    .intro--home h3 {
+      font-size: 35px; }
+    .intro--home p {
+      font-size: 20px;
+      width: 70%; }
+
+  /**** Adjusting the cards so they can appear four on a roll since the current screen size can accomodate the four at once.. ***/
+  .article {
+    grid-template-columns: repeat(4, 1fr); }
+    .article3 {
+      grid-template-columns: repeat(6, 1fr); }
+    .article .cards {
+      height: 240px; }
+    .article .compare {
+      margin: 30px 0 35px; }
+
+  .products__two.gradient {
+    height: 440px; }
+  .products__two--box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .products__two--box p {
+      padding-top: 30px;
+      width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
