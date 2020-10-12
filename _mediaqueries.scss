@@ -315,6 +315,19 @@
         margin:5px 5% 0 90%;
     }
 
+    /*** Aligning the index's page element underneath the contact element to align it differently than the rest of other elemnts it shared classname with.. ****/
+    .intro--home {
+        padding-left: 60px;
+        h3 {
+            font-size: 25px;
+            
+        }
+        p {
+            font-size: 16px;
+            width: 50%;
+        }
+    }
+
     /*** Working on making the Headings bolder ****/
 
     .products {
@@ -334,6 +347,9 @@
             }
         }
     }
+
+    /*** Working on the headings and paragraphs to adjust to the current screen size ****/
+
     .top--game {
         padding: 30px 0 100px;
         h2 {
@@ -344,11 +360,17 @@
             font-size: 18px;
         }
     }
+
+    /**** Making the H2 element word be on a single line instead of wrapping it up on two lines  ****/
+
     .providers {
         div h2 {
             font-size: 75px;
         }
     }
+
+    /**** Giving additional space to this specific element.. ****/
+
     .top--clients {
         padding: 30px 0 10px;
         h2 {
@@ -360,40 +382,33 @@
         }
     }
     
+    /***** Adjusting the form element by increasing the h2 font-size, and changing the color etc..  *****/
+
     .register .contact-us {
         h2 {
             color: $primary-color;
             font-size: 54px;
-            font-weight: 900;
         }
         li {
-            line-height: 26px;
             padding: 10px 0;
             
             i {
                 font-size: 26px;
-                background-color: $grey;
                 border-radius: 20%;
-                color: $primary-color;
-                margin-left: -30px;
-            }
-            a {
-                color: $primary-color;
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: 500;
             }
         }
     }
-    .intro--home {
-        padding-left: 60px;
-        h3 {
-            font-size: 25px;
-            
-        }
-        p {
-            font-size: 16px;
-            width: 50%;
-        }
-    }
+}
+
+@media (min-width: 800px) {
+
+    /**** Using the grid template column to make the contact us and the form align side by side instead of just aligning vertically.. *****/
+
+   .register {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       .contact-us h2 {
+        font-size: 42px;
+       }
+   }
 }

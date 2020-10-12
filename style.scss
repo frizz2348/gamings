@@ -225,7 +225,6 @@ nav {
 
 .intro {
     height: 170px;
-    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/img8.jpeg');
     background-size: cover;
     background-position: center;
@@ -473,13 +472,13 @@ section {
 }
 
 .register {
-    height: 800px;
     background: linear-gradient(rgba(14, 216, 223, 0.712), rgba(7, 243, 231, 0.712), rgba(36, 245, 200, 0.712)), url('images/img9.jpeg');
     background-size: cover;
     background-position: center;
+    padding: 80px 0;
     
     .contact-us {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         h2 {
             color: $grey;

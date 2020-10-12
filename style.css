@@ -417,6 +417,15 @@ table {
     height: 20px;
     margin: 5px 5% 0 90%; }
 
+  /*** Aligning the index's page element underneath the contact element to align it differently than the rest of other elemnts it shared classname with.. ****/
+  .intro--home {
+    padding-left: 60px; }
+    .intro--home h3 {
+      font-size: 25px; }
+    .intro--home p {
+      font-size: 16px;
+      width: 50%; }
+
   /*** Working on making the Headings bolder ****/
   .products h2 {
     font-size: 38px; }
@@ -429,6 +438,7 @@ table {
     .products__two--box p {
       width: 50%; }
 
+  /*** Working on the headings and paragraphs to adjust to the current screen size ****/
   .top--game {
     padding: 30px 0 100px; }
     .top--game h2 {
@@ -437,9 +447,11 @@ table {
       width: 50%;
       font-size: 18px; }
 
+  /**** Making the H2 element word be on a single line instead of wrapping it up on two lines  ****/
   .providers div h2 {
     font-size: 75px; }
 
+  /**** Giving additional space to this specific element.. ****/
   .top--clients {
     padding: 30px 0 10px; }
     .top--clients h2 {
@@ -448,32 +460,22 @@ table {
       width: 50%;
       font-size: 18px; }
 
+  /***** Adjusting the form element by increasing the h2 font-size, and changing the color etc..  *****/
   .register .contact-us h2 {
     color: white;
-    font-size: 54px;
-    font-weight: 900; }
+    font-size: 54px; }
   .register .contact-us li {
-    line-height: 26px;
     padding: 10px 0; }
     .register .contact-us li i {
       font-size: 26px;
-      background-color: grey;
-      border-radius: 20%;
-      color: white;
-      margin-left: -30px; }
-    .register .contact-us li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500; }
-
-  .intro--home {
-    padding-left: 60px; }
-    .intro--home h3 {
-      font-size: 25px; }
-    .intro--home p {
-      font-size: 16px;
-      width: 50%; } }
+      border-radius: 20%; } }
+@media (min-width: 800px) {
+  /**** Using the grid template column to make the contact us and the form align side by side instead of just aligning vertically.. *****/
+  .register {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .register .contact-us h2 {
+      font-size: 42px; } }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
@@ -641,7 +643,6 @@ nav {
 
 .intro {
   height: 170px;
-  width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/img8.jpeg");
   background-size: cover;
   background-position: center;
@@ -827,12 +828,12 @@ section .brands-2 i {
     margin-left: 10px; }
 
 .register {
-  height: 800px;
   background: linear-gradient(rgba(14, 216, 223, 0.712), rgba(7, 243, 231, 0.712), rgba(36, 245, 200, 0.712)), url("images/img9.jpeg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding: 80px 0; }
   .register .contact-us {
-    width: 50%;
+    width: 60%;
     margin: 0 auto; }
     .register .contact-us h2 {
       color: grey;
@@ -1138,6 +1139,15 @@ footer {
     height: 20px;
     margin: 5px 5% 0 90%; }
 
+  /*** Aligning the index's page element underneath the contact element to align it differently than the rest of other elemnts it shared classname with.. ****/
+  .intro--home {
+    padding-left: 60px; }
+    .intro--home h3 {
+      font-size: 25px; }
+    .intro--home p {
+      font-size: 16px;
+      width: 50%; }
+
   /*** Working on making the Headings bolder ****/
   .products h2 {
     font-size: 38px; }
@@ -1150,6 +1160,7 @@ footer {
     .products__two--box p {
       width: 50%; }
 
+  /*** Working on the headings and paragraphs to adjust to the current screen size ****/
   .top--game {
     padding: 30px 0 100px; }
     .top--game h2 {
@@ -1158,9 +1169,11 @@ footer {
       width: 50%;
       font-size: 18px; }
 
+  /**** Making the H2 element word be on a single line instead of wrapping it up on two lines  ****/
   .providers div h2 {
     font-size: 75px; }
 
+  /**** Giving additional space to this specific element.. ****/
   .top--clients {
     padding: 30px 0 10px; }
     .top--clients h2 {
@@ -1169,31 +1182,21 @@ footer {
       width: 50%;
       font-size: 18px; }
 
+  /***** Adjusting the form element by increasing the h2 font-size, and changing the color etc..  *****/
   .register .contact-us h2 {
     color: white;
-    font-size: 54px;
-    font-weight: 900; }
+    font-size: 54px; }
   .register .contact-us li {
-    line-height: 26px;
     padding: 10px 0; }
     .register .contact-us li i {
       font-size: 26px;
-      background-color: grey;
-      border-radius: 20%;
-      color: white;
-      margin-left: -30px; }
-    .register .contact-us li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500; }
-
-  .intro--home {
-    padding-left: 60px; }
-    .intro--home h3 {
-      font-size: 25px; }
-    .intro--home p {
-      font-size: 16px;
-      width: 50%; } }
+      border-radius: 20%; } }
+@media (min-width: 800px) {
+  /**** Using the grid template column to make the contact us and the form align side by side instead of just aligning vertically.. *****/
+  .register {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .register .contact-us h2 {
+      font-size: 42px; } }
 
 /*# sourceMappingURL=style.css.map */
