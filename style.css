@@ -506,7 +506,9 @@ table {
 
   /**** Adjusting the cards so they can appear four on a roll since the current screen size can accomodate the four at once.. ***/
   .article {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    /***** Adjusting this to appear 6 in a row  ****/
+    /******* Increased the Cards height *****/ }
     .article3 {
       grid-template-columns: repeat(6, 1fr); }
     .article .cards {
@@ -514,14 +516,71 @@ table {
     .article .compare {
       margin: 30px 0 35px; }
 
-  .products__two.gradient {
-    height: 440px; }
-  .products__two--box {
+  /**** Adjusted the the height of the gradient class individually..  ****/
+  .products__two {
+    /*** Made it align side to side instead of aligning vertically, the current screen is wide enough to accomodate them both ***/ }
+    .products__two.gradient {
+      height: 440px; }
+    .products__two--box {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .products__two--box p {
+        padding-top: 30px;
+        width: 70%; }
+
+  /**** Working on aligning the two elements horizontally.. ****/
+  .products {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .products__two--box p {
-      padding-top: 30px;
-      width: 70%; } }
+    .products p {
+      padding-top: 50px;
+      width: 70%; }
+
+  /**** After aligning them on columns, had to put a padding to space the element below a little ***/
+  .brands {
+    padding: 40px 0 0; } }
+@media (min-width: 1120px) {
+  .width--one {
+    width: 80%;
+    margin: 0 auto; }
+
+  .intro--home {
+    padding: 50px 0 50px 240px; }
+    .intro--home p {
+      font-size: 20px;
+      width: 60%;
+      font-weight: 650; }
+
+  .products {
+    padding-bottom: 40px; }
+
+  .products__two .article2 {
+    margin: 0 auto; }
+
+  .feedback {
+    background: white;
+    color: black;
+    width: 60%; }
+
+  /*** Adjusting the solution nav bar  ****/
+  .platform p {
+    width: 60%;
+    font-size: 18px;
+    padding: 0 0 10px 0; }
+
+  table {
+    margin-bottom: 40px; }
+
+  .sec-1, .sec-2, .features {
+    margin: 30px auto; }
+
+  /*** Working on the Product nav media query ****/
+  .article {
+    margin: 40px auto; }
+
+  /*** Putting space below the last element before the footer of the career nav page.. ****/
+  .about--fundamental {
+    margin-bottom: 30px; } }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   body.open {
@@ -675,6 +734,10 @@ nav {
   .contact li {
     text-align: center;
     line-height: 26px; }
+    .contact li:hover {
+      background-color: #24585f;
+      padding: 4px;
+      transition: ease-in 300ms; }
     .contact li i {
       font-size: 20px;
       color: red; }
@@ -684,8 +747,7 @@ nav {
       font-size: 13px;
       font-weight: 500; }
       .contact li a:hover {
-        background-color: #24585f;
-        padding: 4px; }
+        background-color: #24585f; }
 
 .intro {
   height: 170px;
@@ -1274,7 +1336,9 @@ footer {
 
   /**** Adjusting the cards so they can appear four on a roll since the current screen size can accomodate the four at once.. ***/
   .article {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    /***** Adjusting this to appear 6 in a row  ****/
+    /******* Increased the Cards height *****/ }
     .article3 {
       grid-template-columns: repeat(6, 1fr); }
     .article .cards {
@@ -1282,13 +1346,70 @@ footer {
     .article .compare {
       margin: 30px 0 35px; }
 
-  .products__two.gradient {
-    height: 440px; }
-  .products__two--box {
+  /**** Adjusted the the height of the gradient class individually..  ****/
+  .products__two {
+    /*** Made it align side to side instead of aligning vertically, the current screen is wide enough to accomodate them both ***/ }
+    .products__two.gradient {
+      height: 440px; }
+    .products__two--box {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .products__two--box p {
+        padding-top: 30px;
+        width: 70%; }
+
+  /**** Working on aligning the two elements horizontally.. ****/
+  .products {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-    .products__two--box p {
-      padding-top: 30px;
-      width: 70%; } }
+    .products p {
+      padding-top: 50px;
+      width: 70%; }
+
+  /**** After aligning them on columns, had to put a padding to space the element below a little ***/
+  .brands {
+    padding: 40px 0 0; } }
+@media (min-width: 1120px) {
+  .width--one {
+    width: 80%;
+    margin: 0 auto; }
+
+  .intro--home {
+    padding: 50px 0 50px 240px; }
+    .intro--home p {
+      font-size: 20px;
+      width: 60%;
+      font-weight: 650; }
+
+  .products {
+    padding-bottom: 40px; }
+
+  .products__two .article2 {
+    margin: 0 auto; }
+
+  .feedback {
+    background: white;
+    color: black;
+    width: 60%; }
+
+  /*** Adjusting the solution nav bar  ****/
+  .platform p {
+    width: 60%;
+    font-size: 18px;
+    padding: 0 0 10px 0; }
+
+  table {
+    margin-bottom: 40px; }
+
+  .sec-1, .sec-2, .features {
+    margin: 30px auto; }
+
+  /*** Working on the Product nav media query ****/
+  .article {
+    margin: 40px auto; }
+
+  /*** Putting space below the last element before the footer of the career nav page.. ****/
+  .about--fundamental {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

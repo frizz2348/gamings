@@ -457,9 +457,13 @@
 
     .article {
         grid-template-columns: repeat(4, 1fr);
+
+        /***** Adjusting this to appear 6 in a row  ****/
+
         &3 {
             grid-template-columns: repeat(6, 1fr);
-        }
+        } 
+        /******* Increased the Cards height *****/
         .cards {
             height: 240px;
         }
@@ -467,10 +471,14 @@
             margin: 30px 0 35px;
         }
     }
+
+    /**** Adjusted the the height of the gradient class individually..  ****/
     .products__two {
         &.gradient {
             height: 440px;
         }
+
+        /*** Made it align side to side instead of aligning vertically, the current screen is wide enough to accomodate them both ***/
         &--box {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -479,5 +487,68 @@
                 width: 70%;
             }
         }
+    }
+
+    /**** Working on aligning the two elements horizontally.. ****/
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p {
+            padding-top: 50px;
+            width: 70%;
+        }
+    }
+
+    /**** After aligning them on columns, had to put a padding to space the element below a little ***/
+    .brands {
+        padding: 40px 0 0
+    }
+}
+
+@media (min-width: 1120px) {
+    .width--one {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .intro--home {
+        padding: 50px 0 50px 240px;
+        p {
+            font-size: 20px;
+            width: 60%;
+            font-weight: 650;
+        }
+    }
+    .products {
+        padding-bottom: 40px;
+    }
+    .products__two .article2 {
+        margin: 0 auto;
+    }
+    .feedback {
+        background: $primary-color;
+        color: $dark;
+        width: 60%;
+    }
+    /*** Adjusting the solution nav bar  ****/
+    .platform p {
+        width: 60%;
+        font-size: 18px;
+        padding: 0 0 10px 0;
+    }
+    table {
+        margin-bottom: 40px;
+    }
+    .sec-1, .sec-2, .features{
+        margin: 30px auto;
+    }
+
+    /*** Working on the Product nav media query ****/
+    .article {
+        margin: 40px auto;
+    }
+
+    /*** Putting space below the last element before the footer of the career nav page.. ****/
+    .about--fundamental {
+        margin-bottom: 30px;
     }
 }
