@@ -410,6 +410,10 @@ table {
       display: inline; }
       .contact li a {
         color: white; }
+        .contact li a:hover {
+          background-color: #12d0e9;
+          padding: 4px;
+          transition: ease-in 300ms; }
 
   /*** Making the image by the right handside smaller and shifting it to the right to accomodate the contact numbers  ****/
   .head2 .img img {
@@ -735,8 +739,8 @@ nav {
     text-align: center;
     line-height: 26px; }
     .contact li:hover {
-      background-color: #24585f;
-      padding: 4px;
+      background: transparent;
+      padding: 1px;
       transition: ease-in 300ms; }
     .contact li i {
       font-size: 20px;
@@ -1020,6 +1024,10 @@ section .brands-2 i {
     .solution li a:hover, .product li a:hover, .game-provider li a:hover, .about-us li a:hover, .legal li a:hover {
       color: #00d6d6; }
 
+.solution--footer, .product--footer, .game--footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
 footer {
   background-color: #e213a4;
   color: white;
@@ -1240,6 +1248,10 @@ footer {
       display: inline; }
       .contact li a {
         color: white; }
+        .contact li a:hover {
+          background-color: #12d0e9;
+          padding: 4px;
+          transition: ease-in 300ms; }
 
   /*** Making the image by the right handside smaller and shifting it to the right to accomodate the contact numbers  ****/
   .head2 .img img {

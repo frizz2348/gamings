@@ -207,8 +207,8 @@ nav {
         text-align: center;
         line-height: 26px;
         &:hover {
-            background-color: #24585f;
-            padding: 4px;
+            background: transparent;
+            padding: 1px;
             transition: ease-in 300ms;
         }
         i {
@@ -587,6 +587,10 @@ section {
     }   
 }
 
+.solution--footer, .product--footer, .game--footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 footer {
     background-color: rgb(226, 19, 164);
@@ -597,5 +601,6 @@ footer {
         font-weight: 300;
     }
 }
+
 
 @import './mediaqueries';

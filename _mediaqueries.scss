@@ -303,6 +303,11 @@
             display: inline;
             a {
                 color: $primary-color;
+                &:hover {
+                    background-color: #12d0e9;
+                    padding: 4px;
+                    transition: ease-in 300ms;
+                }
             }
         }
     }
