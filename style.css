@@ -442,6 +442,9 @@ table {
     .products__two--box p {
       width: 50%; }
 
+  .brands {
+    margin-top: 140px; }
+
   /*** Working on the headings and paragraphs to adjust to the current screen size ****/
   .top--game {
     padding: 30px 0 100px; }
@@ -542,7 +545,8 @@ table {
 
   /**** After aligning them on columns, had to put a padding to space the element below a little ***/
   .brands {
-    padding: 40px 0 0; } }
+    padding: 40px 0 0;
+    margin-top: 80px; } }
 @media (min-width: 1120px) {
   .width--one {
     width: 80%;
@@ -620,6 +624,7 @@ nav {
   position: fixed;
   top: 1px;
   right: 0;
+  width: 140px;
   background-color: white;
   visibility: hidden; }
   nav.open {
@@ -1280,6 +1285,9 @@ footer {
     .products__two--box p {
       width: 50%; }
 
+  .brands {
+    margin-top: 140px; }
+
   /*** Working on the headings and paragraphs to adjust to the current screen size ****/
   .top--game {
     padding: 30px 0 100px; }
@@ -1380,7 +1388,8 @@ footer {
 
   /**** After aligning them on columns, had to put a padding to space the element below a little ***/
   .brands {
-    padding: 40px 0 0; } }
+    padding: 40px 0 0;
+    margin-top: 80px; } }
 @media (min-width: 1120px) {
   .width--one {
     width: 80%;

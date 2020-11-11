@@ -353,6 +353,10 @@
         }
     }
 
+    .brands {
+        margin-top: 140px;
+    }
+
     /*** Working on the headings and paragraphs to adjust to the current screen size ****/
 
     .top--game {
@@ -506,7 +510,8 @@
 
     /**** After aligning them on columns, had to put a padding to space the element below a little ***/
     .brands {
-        padding: 40px 0 0
+        padding: 40px 0 0;
+        margin-top: 80px;
     }
 }
 
