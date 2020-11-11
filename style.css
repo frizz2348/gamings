@@ -600,7 +600,7 @@ body {
   width: 100%; }
 
 header {
-  background: linear-gradient(rgba(102, 32, 149, 0.7), rgba(218, 9, 9, 0.7), rgba(19, 14, 14, 0.7)), url("images/img2.jpeg");
+  background: linear-gradient(rgba(45, 33, 51, 0.7), rgba(36, 11, 11, 0.7), rgba(34, 24, 24, 0.7)), url("images/img2.jpeg");
   background-size: cover;
   background-position: center;
   background-color: cyan;
@@ -615,7 +615,7 @@ header {
       color: white;
       font-weight: 1400; }
     header .head h4 {
-      color: black;
+      color: red;
       font-weight: 600;
       text-transform: uppercase;
       font-size: 11px; }
@@ -735,7 +735,7 @@ nav {
 .contact {
   height: 155px;
   width: 100%;
-  background: rgba(255, 1, 200, 0.37); }
+  background: rgba(61, 77, 78, 0.37); }
   .contact.contact--hide {
     display: none; }
   .contact ul {
@@ -745,8 +745,7 @@ nav {
     line-height: 26px; }
     .contact li:hover {
       background: transparent;
-      padding: 1px;
-      transition: ease-in 300ms; }
+      transition: ease-in 600ms; }
     .contact li i {
       font-size: 20px;
       color: red; }
@@ -756,7 +755,9 @@ nav {
       font-size: 13px;
       font-weight: 500; }
       .contact li a:hover {
-        background-color: #24585f; }
+        background-color: #15191a;
+        transition: ease-in 300ms;
+        color: white; }
 
 .intro {
   height: 170px;
